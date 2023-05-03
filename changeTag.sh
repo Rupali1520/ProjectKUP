@@ -1,1 +1,1 @@
-sed "s/v1/$1/g" pod.yml > node-app-pod.yml
+sed "s/v1/$1/g" pod.yaml > node-app-pod.yaml
