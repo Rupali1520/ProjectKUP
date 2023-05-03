@@ -10,4 +10,4 @@ spec:
     - name: nodeapp
       image: rupali1520/image:v1
       ports:
-        - containerPort: 4000
+        - containerPort: 8000
