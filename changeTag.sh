@@ -1,1 +1,1 @@
-sed "s/v1/$1/g" service.yaml > node-app-pod.yaml
+sed "s/v1/$1/g" pod.yaml > node-app-pod.yaml
