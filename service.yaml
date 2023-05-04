@@ -8,7 +8,7 @@ spec:
   selector:
     app: nodepod
   ports:
-  - nodeport: 32500
+  - nodePort: 32500
     port: 80
     targetPort: 8000
  
