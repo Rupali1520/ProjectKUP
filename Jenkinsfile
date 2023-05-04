@@ -20,7 +20,11 @@ pipeline {
                 }
             }
         }
-        // stage('deploy'){
+        stage('create artifact'){
+            steps{
+                sh 'tar -cvzf artifact.tar.gz '
+            }
+        }
         
         
     }
