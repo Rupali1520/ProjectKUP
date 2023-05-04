@@ -8,18 +8,18 @@ pipeline {
                 git branch: 'main', credentialsId: '4d2afe5d-f0d8-486e-bd33-f537b15a34a0', url: 'https://github.com/Rupali1520/ProjectKUP.git'
             }
         }
-        stage('Build'){
-            steps{
-                sh 'pip install Django==3.2'
-            }
-        }
-        stage('test'){
-            steps{
-                script{
-                    sh 'python manage.py test'
-                }
-            }
-        }
+//         stage('Build'){
+//             steps{
+//                 sh 'pip install Django==3.2'
+//             }
+//         }
+//         stage('test'){
+//             steps{
+//                 script{
+//                     sh 'python manage.py test'
+//                 }
+//             }
+//         }
         // stage('deploy'){
         //     steps{
         //         script{
@@ -69,13 +69,7 @@ pipeline {
 }
             }
         }
-        // stage('Deploy to k8s'){
-        //     steps{
-        //         script{
-        //             kubernetesDeploy (configs: 'deploymentservice.yaml',kubeconfigId: 'k82')
-        //         }
-        //     }
-        // }
+        
         
     }
 }
