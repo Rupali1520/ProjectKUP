@@ -6,7 +6,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: nodeapp
+    app: nodepod
   ports:
   - nodeport: 32500
     port: 80
