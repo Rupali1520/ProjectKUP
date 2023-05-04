@@ -1,13 +1,18 @@
-
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: nodeapp
-  labels:
-    app: nodeapp
+  name: mydeploy
 spec:
-  containers:
-    - name: nodeapp
-      image: rupali1520/image:version
-      ports:
+  selector:
+    matchLabels:
+      app: nodepod
+  template:
+    metadata:
+      labels:
+        app: nodepod
+    spec:
+      containers:
+      - name: mycontainer
+        image: rupali1520/image:version1
+        ports:
         - containerPort: 8000
