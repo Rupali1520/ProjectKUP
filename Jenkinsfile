@@ -22,7 +22,7 @@ pipeline {
         }
         stage('create artifact'){
             steps{
-                sh 'tar -cvzf artifact.tar.gz '
+                sh 'tar -cvzf artifact.tar.gz ParkTicketManagement'
             }
         }
         
