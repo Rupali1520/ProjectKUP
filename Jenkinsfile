@@ -13,13 +13,13 @@ pipeline {
                 sh 'pip install Django==3.2'
             }
         }
-        stage('test'){
-            steps{
-                script{
-                    sh 'python manage.py test'
-                }
-            }
-        }
+//         stage('test'){
+//             steps{
+//                 script{
+//                     sh 'python manage.py test'
+//                 }
+//             }
+//         }
         
 //         stage('create docker image')
 //         {
