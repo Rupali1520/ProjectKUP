@@ -8,6 +8,6 @@ metadata:
 spec:
   containers:
     - name: nodeapp
-      image: rupali1520/image:v1
+      image: rupali1520/image:version
       ports:
         - containerPort: 8000
