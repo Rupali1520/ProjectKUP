@@ -16,3 +16,7 @@ spec:
         image: rupali1520/image:version1
         ports:
         - containerPort: 8000
+
+
+
+# hii
