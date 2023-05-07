@@ -45,7 +45,7 @@ pipeline {
         stage('push image on docker hub'){
             steps{
                 script{
-                    withCredentials([string(credentialsId: 'newcredentialfordocker', variable: 'dockerhub')]) {
+                    withCredentials([string(credentialsId: 'dockerhubpwd', variable: 'dockerhub')]) {
     // some block
                          sh 'sudo docker login -u rupali1520 -p ${dockerhub}'
                       sh 'sudo docker push rupali1520/image:${BUILD_NUMBER}'
