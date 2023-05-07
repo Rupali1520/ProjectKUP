@@ -60,6 +60,9 @@ pipeline {
             }
         }
         stage('deploy'){
+            when{
+              branch 'deploy'
+            }
             steps{
                 sh 'chmod u+x changeTag.sh'
                 sh './changeTag.sh ${BUILD_NUMBER}'
