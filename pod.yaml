@@ -18,7 +18,7 @@ spec:
         - containerPort: 8000
         volumeMounts:
           - name: test2
-            mountPath: /data1
+            mountPath: /app
       volumes:
        - name: test2
          hostPath:
