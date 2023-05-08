@@ -55,6 +55,7 @@ pipeline {
 
 //                       sh 'sudo docker login -u rupali1520 -p ${dockerhubpwd}'
 //                       sh 'sudo docker push rupali1520/image1:${BUILD_NUMBER}'
+                    sh 'sudo docker rmi rupali1520/image1:${BUILD_NUMBER}'
 //                   }
                 }
             }
