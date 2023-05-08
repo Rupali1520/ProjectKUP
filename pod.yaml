@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mycontainer
-        image: rupali1520/image:version1
+        image: rupali1520/image1:version1
         ports:
         - containerPort: 8000
         volumeMounts:
