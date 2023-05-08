@@ -5,7 +5,7 @@ pipeline {
         stage('Clone')
         {
             steps{
-                git branch: 'main', credentialsId: '4d2afe5d-f0d8-486e-bd33-f537b15a34a0', url: 'https://github.com/Rupali1520/ProjectKUP.git'
+                git branch: '', credentialsId: '4d2afe5d-f0d8-486e-bd33-f537b15a34a0', url: 'https://github.com/Rupali1520/ProjectKUP.git'
             }
         }
 //         stage('Build'){
@@ -60,7 +60,7 @@ pipeline {
             }
         }
         stage('deploy'){
-            when{ branch 'deploy'}
+       
             steps{
                 
                 sh 'chmod u+x changeTag.sh'
