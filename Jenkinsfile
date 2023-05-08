@@ -5,7 +5,7 @@ pipeline {
         stage('Clone')
         {
             steps{
-             git branch: '', credentialsId: 'newtoken', url: 'https://github.com/Rupali1520/ProjectKUP.git'
+             git branch: 'main', credentialsId: 'newtoken', url: 'https://github.com/Rupali1520/ProjectKUP.git'
             }
         }
         stage('Build'){
