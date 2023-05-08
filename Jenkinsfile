@@ -48,13 +48,13 @@ pipeline {
                     withCredentials([string(credentialsId: 'dockerhubpwd', variable: 'dockerhub')]) { 
     // some block
                          sh 'sudo docker login -u rupali1520 -p ${dockerhub}'
-                      sh 'sudo docker push rupali1520/image:${BUILD_NUMBER}'
+                      sh 'sudo docker push rupali1520/image1:${BUILD_NUMBER}'
 }
 //                   withCredentials([string(credentialsId: 'dockerhubpwd', variable: 'dockerhubpwd')]) {
 //     //some block
 
 //                       sh 'sudo docker login -u rupali1520 -p ${dockerhubpwd}'
-//                       sh 'sudo docker push rupali1520/image:${BUILD_NUMBER}'
+//                       sh 'sudo docker push rupali1520/image1:${BUILD_NUMBER}'
 //                   }
                 }
             }
