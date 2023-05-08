@@ -36,7 +36,7 @@ pipeline {
                     // sh 'ls'
                     // sh 'docker image'
                     // sh 'sudo usermod -aG docker jenkins'
-                    sh 'sudo docker build -t rupali1520/image:${BUILD_NUMBER} .'
+                    sh 'sudo docker build -t rupali1520/image1:${BUILD_NUMBER} .'
                     // sh 'sudo docker run -dp 8000:8000 image:env=${env.BUILD_NUMBER}'
                     // sh 'sudo docker ps'
                 }
