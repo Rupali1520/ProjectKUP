@@ -65,7 +65,7 @@ pipeline {
                 sh 'chmod u+x changeTag.sh'
                 sh './changeTag.sh ${BUILD_NUMBER}'
                 withCredentials([file(credentialsId: 'k82', variable: 'kubernetesvar')]) {
-    // some block
+ 
               sh 'kubectl --kubeconfig=$kubernetesvar --validate=false apply -f service.yaml'
               sh 'kubectl --kubeconfig=$kubernetesvar --validate=false apply -f node-app-pod.yaml'
              
