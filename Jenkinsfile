@@ -26,7 +26,7 @@ pipeline {
                     sh 'ls'
                     sh 'pwd'
                 }
-            }
+            }}
     //     // }
 //         stage('create docker image')
 //         {
