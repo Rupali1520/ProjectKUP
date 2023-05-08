@@ -19,7 +19,7 @@ spec:
         volumeMounts:
           - name: test2
             mountPath: /data1
-    volumes:
-      - name: test2
-        hostPath:
+      volumes:
+       - name: test2
+         hostPath:
           path: /tmp/data1
